@@ -10,7 +10,7 @@
 	<head>
 
 		<!-- Title -->
-		<title>Metals</title>
+		<title>Portfolio Interactive | Tank - Creative Portfolio Showcase HTML Website Template by Themetorium</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -164,7 +164,7 @@
 
 												<!-- Begin submenu (submenu master)
 												==================================== -->
-												<li class="tt-ol-submenu-wrap">
+												<li class="tt-ol-submenu-wrap active">
 													<div class="tt-ol-submenu-trigger">
 														<a href="#">Portfolio</a>
 														<div class="tt-ol-submenu-caret-wrap">
@@ -242,7 +242,7 @@
 															<!-- End submenu -->
 
 															<li><a href="portfolio-interactive.html">Interactive</a></li>
-															<li><a href="portfolio-interactive-compact.html">Interactive Compact</a></li>
+															<li class="active"><a href="portfolio-interactive-compact.html">Interactive Compact</a></li>
 															<li><a href="elements-classic-menu.html">Classic Menu</a></li>
 															<li><a href="elements-classic-filter.html">Classic Filter</a></li>
 
@@ -273,7 +273,7 @@
 
 												<!-- Begin submenu (submenu master)
 												==================================== -->
-												<li class="tt-ol-submenu-wrap active">
+												<li class="tt-ol-submenu-wrap">
 													<div class="tt-ol-submenu-trigger">
 														<a href="#">Blog</a>
 														<div class="tt-ol-submenu-caret-wrap">
@@ -285,7 +285,7 @@
 
 															<!-- Begin submenu
 															=================== -->
-															<li class="tt-ol-submenu-wrap active">
+															<li class="tt-ol-submenu-wrap">
 																<div class="tt-ol-submenu-trigger">
 																	<a href="#" class="tt-ol-submenu-link">Blog List</a>
 																	<div class="tt-ol-submenu-caret-wrap">
@@ -295,7 +295,7 @@
 																<div class="tt-ol-submenu">
 																	<ul class="tt-ol-submenu-list">
 
-																		<li class="active"><a href="blog-interactive.html">Interactive List</a></li>
+																		<li><a href="blog-interactive.html">Interactive List</a></li>
 																		<li><a href="blog-list.html">Compact List</a></li>
 																		<li><a href="blog-classic.html">Classic List</a></li>
 																		<li><a href="blog-classic-sidebar.html">Classic Sidebar</a></li>
@@ -472,16 +472,16 @@
 					* Use class "ph-content-parallax" to enable content parallax.
 					* Use class "ph-stroke" to enable caption title stroke style.
 					-->
-					<div id="page-header" class="ph-cap-lg ph-center ph-image-cropped ph-image-cover-4 ph-content-parallax">
+					<div id="page-header" class="ph-full ph-cap-xxlg ph-center ph-image-cropped ph-image-cover-2 ph-content-parallax">
 						<div class="page-header-inner tt-wrap">
 
 							<!-- Begin page header image 
 							============================= -->
-							<!-- <div class="ph-image">
+							<div class="ph-image">
 								<div class="ph-image-inner">
-									<img src="assets/img/page-header/ph-2.jpg" alt="Image">
+									<img src="assets/img/page-header/ph-1.jpg" alt="Image">
 								</div>
-							</div> -->
+							</div>
 							<!-- End page header image -->
 
 							<!-- Begin page header caption
@@ -489,9 +489,9 @@
 							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
 							<div class="ph-caption">
-								<h1 class="ph-caption-title ph-appear">Blog</h1>
-								<div class="ph-caption-title-ghost ph-appear">Blog</div>
-								<div class="ph-caption-subtitle ph-appear">Articles &amp; News</div>
+								<h1 class="ph-caption-title ph-appear">Portfolio</h1>
+								<div class="ph-caption-title-ghost ph-appear">Portfolio</div>
+								<div class="ph-caption-subtitle ph-appear">Selected Works</div>
 							</div> 
 							<!-- End page header caption -->
 
@@ -539,288 +539,201 @@
 						============================ 
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
-						<div class="tt-section">
-							<div class="tt-section-inner tt-wrap">
+						<div class="tt-section padding-bottom-xlg-150">
+							<div class="tt-section-inner tt-wrap max-width-1400">
 
-								<!-- Begin blog interactive 
+								<!-- Begin portfolio interactive 
 								=================================
-								* Use class "bi-borders" to enable borders.
+								* Use class "pi-compact" to enable compact style.
+								* Use class "pi-borders" to enable borders.
+								* Use class "pi-stroke" to enable title stroke style.
+								* Use class "pi-force-scroll" to also force shorter hover titles to scroll. Note: If "pi-item-title" text is wider than "pi-item-title-link" then hover title scrolls by default (the longer the text, the faster it scrolls). You may need to adjust the "data-scroll-speed" attribute on each item separately to find a suitable speed. No effect on mobile devices!
 								-->
-								<div class="blog-interactive bi-borders">
+								<div class="portfolio-interactive pi-borders pi-compact pi-force-scroll">
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-1.jpg" alt="image">
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-1.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Victorian Girls</h2>
+											<div class="pi-item-hover-title">Victorian Girls</div>
 										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Lifestyle</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">People</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
 										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">5 Surprising Techniques to Improve Your Creativity</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-2.jpg" alt="image">
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="2">
+										<a href="single-project-2.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Smithy</h2>
+											<div class="pi-item-hover-title">Smithy</div>
 										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Tutorials</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">Creative</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
 										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Avoid the Top 10 Mistakes Made by Beginners</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-3.jpg" alt="image">
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-3.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Fashion Week</h2>
+											<div class="pi-item-hover-title">Fashion Week</div>
 										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Lifestyle</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">People</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
 										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Why Some People Almost Always Save Money With This Method</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<figure class="pi-item-image cover-opacity-2">
+											<video class="pi-item-video" loop muted preload="metadata" poster="assets/vids/fashion-week.jpg">
+												<source src="assets/vids/fashion-week.mp4" type="video/mp4">
+												<source src="assets/vids/fashion-week.webm" type="video/webm">
+											</video>
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-4.jpg" alt="image">
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-4.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Mystery Forest</h2>
+											<div class="pi-item-hover-title">Mystery Forest</div>
 										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Inspiration</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">Nature</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
 										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Want to Step Up Your Skills? You Need to Read This First</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-5.jpg" alt="image">
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-5.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Red Package</h2>
+											<div class="pi-item-hover-title">Red Package</div>
 										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Tutorials</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">Branding</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
 										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
+
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-6.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Studio Shoot</h2>
+											<div class="pi-item-hover-title">Studio Shoot</div>
+										</a>
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">People</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
 										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-5.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
+
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-7.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Breaking Wave</h2>
+											<div class="pi-item-hover-title">Breaking Wave</div>
+										</a>
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">Nature</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
+										</div>
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-6.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
+
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-8.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Wall Lamp</h2>
+											<div class="pi-item-hover-title">Wall Lamp</div>
+										</a>
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">Branding</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
+										</div>
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-7.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
+
+									<!-- Begin portfolio interactive item 
+									====================================== 
+									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
+									-->
+									<div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
+										<a href="single-project-9.html" class="pi-item-title-link">
+											<h2 class="pi-item-title">Elegant Stoves</h2>
+											<div class="pi-item-hover-title">Elegant Stoves</div>
+										</a>
+										<div class="pi-item-category-wrap">
+											<div class="pi-item-category">Creative</div>
+											<!-- <div class="pi-item-category">Varia</div> -->
+										</div>
+										<figure class="pi-item-image cover-opacity-2">
+											<img src="assets/img/portfolio/portfolio-8.jpg" alt="image">
+										</figure>
+									</div>
+									<!-- End portfolio interactive item -->
 
 								</div>
-								<!-- End blog interactive -->
+								<!-- End portfolio interactive -->
 
 
-								<!-- Begin sliding sidebar 
-								=========================== 
-								* Use class "tt-ss-right" to align sidebar to right.
-								-->
-								<div class="tt-sliding-sidebar-wrap">
-									<div class="tt-sliding-sidebar">
-										<div class="tt-sliding-sidebar-inner">
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-search">
-												<h3 class="sidebar-heading">Search</h3>
-												
-												<!-- Begin form (Note: for design purposes only!)
-												================ 
-												* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
-												* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
-												-->
-												<form>
-													<div class="tt-form-btn-inside">
-														<input class="tt-form-control" type="text" id="search" placeholder="Type something & hit enter" required>
-														<button type="submit"><i class="fas fa-search"></i></button>
-													</div>
-												</form>
-												<!-- End form -->
-
-											</div> 
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-categories">
-												<h3 class="sidebar-heading">Categories</h3>
-												<ul class="list-unstyled">
-													<li><a href="blog-archive.html">Web Design <span title="Entries in this category">26</span></a></li>
-													<li><a href="blog-archive.html">Resources <span title="Entries in this category">12</span></a></li>
-													<li><a href="blog-archive.html">Tutorials <span title="Entries in this category">19</span></a></li>
-													<li><a href="blog-archive.html">Freebies <span title="Entries in this category">31</span></a></li>
-													<li><a href="blog-archive.html">Inspiration <span title="Entries in this category">67</span></a></li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-post-list">
-												<!-- Can be "Recent Posts" or "Popular Posts" etc. -->
-												<h3 class="sidebar-heading">Popular Posts</h3>
-												<ul class="list-unstyled">
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">Why Some People Almost Always Save Money With This Method</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
-															<span class="sidebar-post-date">May 14, 2021</span>
-														</div>
-													</li>
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">Want to Step Up Your Skills? You Need to Read This First</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
-															<span class="sidebar-post-date">May 12, 2021</span>
-														</div>
-													</li>
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
-															<span class="sidebar-post-date">May 17, 2021</span>
-														</div>
-													</li>
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">How to Win Friends and Influence People?</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
-															<span class="sidebar-post-date">May 21, 2021</span>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-comments-list">
-												<h3 class="sidebar-heading">Recent Comments</h3>
-												<ul class="list-unstyled">
-													<li class="sidebar-comment">
-														<div class="sidebar-comment-meta">
-															<div class="sidebar-comment-data">
-																<span class="sidebar-comment-author"><a href="">John Doe</a></span>
-																<span class="sidebar-comment-date">May 14, 2021</span>
-															</div>
-														</div>
-														<div class="sidebar-comment-text">
-															<a href="">Aliquet praesent tempor ac dolor aliquet. Risus mi vitae hendrerit orci vitae amet lacus tertis ...</a>
-														</div>
-													</li>
-
-													<li class="sidebar-comment">
-														<div class="sidebar-comment-meta">
-															<div class="sidebar-comment-data">
-																<span class="sidebar-comment-author"><a href="">David Bradley</a></span>
-																<span class="sidebar-comment-date">May 14, 2021</span>
-															</div>
-														</div>
-														<div class="sidebar-comment-text">
-															<a href="">Laculis molestie rhoncus. Amet maecenas ut orci id dui. Et dui morbi. Non mauris nautis trettis ...</a>
-														</div>
-													</li>
-
-													<li class="sidebar-comment">
-														<div class="sidebar-comment-meta">
-															<div class="sidebar-comment-data">
-																<span class="sidebar-comment-author"><a href="">Kate Dixon</a></span>
-																<span class="sidebar-comment-date">May 14, 2021</span>
-															</div>
-														</div>
-														<div class="sidebar-comment-text">
-															<a href="">Feugiat fringilla sequi. Anunc adipiscing nisl lorem morbi tincidunt gravida vistrim nocktac fitset ...</a>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-tags">
-												<h3 class="sidebar-heading">Tags</h3>
-												<div class="sidebar-tags-list">
-													<ul>
-														<li><a href="blog-archive.html">#portfolio</a></li>
-														<li><a href="blog-archive.html">#multipurpose</a></li>
-														<li><a href="blog-archive.html">#minimal</a></li>
-														<li><a href="blog-archive.html">#agency</a></li>
-														<li><a href="blog-archive.html">#creatives</a></li>
-														<li><a href="blog-archive.html">#freelancers</a></li>
-														<li><a href="blog-archive.html">#design</a></li>
-														<li><a href="blog-archive.html">#bootstrap</a></li>
-														<li><a href="blog-archive.html">#responsive</a></li>
-														<li><a href="blog-archive.html">#simple</a></li>
-														<li><a href="blog-archive.html">#creative</a></li>
-														<li><a href="blog-archive.html">#blog</a></li>
-														<li><a href="blog-archive.html">#wordpress</a></li>
-														<li><a href="blog-archive.html">#black &amp; white</a></li>
-													</ul>
-												</div> <!-- /.sidebar-tags-list -->
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-meta">
-												<h3 class="sidebar-heading">Meta</h3>
-												<ul class="list-unstyled">
-													<li><a href="">Log In</a></li>
-													<li><a href="">Entries RSS</a></li>
-													<li><a href="">Comments RSS</a></li>
-													<li><a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a></li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-										</div> <!-- /.tt-sliding-sidebar-inner -->
-									</div> <!-- /.tt-sliding-sidebar -->
-
-									<!-- Begin sliding sidebar trigger -->
-									<div class="tt-sliding-sidebar-trigger">
-										<span class="tt-ss-icon"><i class="fas fa-align-justify"></i></span>
-										<span class="tt-ss-icon-close"><i class="fas fa-times"></i></span>
-									</div>
-									<!-- End sliding sidebar trigger -->
-
-									<!-- Close overlay -->
-									<div class="tt-sliding-sidebar-close cursor-close"></div>
-
-								</div> 
-								<!-- End sliding sidebar -->
-
-
-								<!-- Begin tt-pagination 
+								<!-- Begin tt-pagination (uncomment below code if you want to use pagination)
 								========================= 
 								* Use class "tt-pagin-center" to align center.
 								-->
-								<div class="tt-pagination tt-pagin-center margin-top-xlg-100 anim-fadeinup">
+								<!-- <div class="tt-pagination tt-pagin-center margin-top-80 anim-fadeinup">
 									<div class="tt-pagin-prev">
 										<a href="" class="tt-pagin-item magnetic-item"><i class="fas fa-chevron-left"></i></a>
 									</div>
@@ -833,7 +746,7 @@
 									<div class="tt-pagin-next">
 										<a href="" class="tt-pagin-item tt-pagin-next magnetic-item"><i class="fas fa-chevron-right"></i></a>
 									</div>
-								</div>
+								</div> -->
 								<!-- End tt-pagination -->
 
 							</div> <!-- /.tt-section-inner -->
@@ -855,16 +768,16 @@
 								* Use class "tt-pn-scroll" to enable hover title scroll. Note: If "tt-pn-hover-title" text is wider than "tt-pn-link" then it scrolls by default. The longer the text, the faster it scrolls.
 								-->
 								<div class="tt-page-nav tt-pn-scroll">
-									<a href="portfolio-grid-modern.html" class="tt-pn-link anim-fadeinup">
-										<div class="tt-pn-title">Portfolio</div>
-										<div class="tt-pn-hover-title">Portfolio</div>
+									<a href="contact.html" class="tt-pn-link anim-fadeinup">
+										<div class="tt-pn-title">Let's talk</div>
+										<div class="tt-pn-hover-title">Let's talk</div>
 									</a> <!-- /.tt-pn-link -->
 
-									<div class="tt-pn-subtitle anim-fadeinup">Selected Works</div>
+									<div class="tt-pn-subtitle anim-fadeinup">Get in Touch</div>
 
 									<!-- Use if destination page contains page header image -->
 									<div class="tt-pn-image">
-										<img src="assets/img/page-header/ph-1.jpg" alt="image">
+										<img src="assets/img/page-header/ph-3.jpg" alt="image">
 									</div>
 								</div>
 								<!-- End page nav -->
