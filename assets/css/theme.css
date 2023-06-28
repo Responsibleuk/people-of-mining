@@ -199,7 +199,7 @@ hr {
 /* Body font
 ============= */
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Avenir', sans-serif;
 }
 
 
@@ -239,7 +239,7 @@ body {
 .tt-scrolling-text,
 #blog-list.bli-compact .bli-info::before,
 .blog-interactive-item::before {
-	font-family: 'Noto Serif JP', serif;
+	font-family: 'Avenir', sans-serif;
 }
 
 
@@ -826,7 +826,7 @@ body:not(.tt-boxed) .tt-header-inner,
 	color: #FFF;
 }
 .tt-logo img {
-	max-height: 48px; /* You may need to change the img height to match your logo type! */
+	max-height: 50px; /* You may need to change the img height to match your logo type! */
 }
 
 .tt-logo-dark{
@@ -840,7 +840,7 @@ body:not(.tt-boxed) .tt-header-inner,
 		top: 20px;
 	}
 	.tt-logo img {
-		max-height: 42px; /* You may need to change the img height to match your logo type! */
+		max-height: 50px; /* You may need to change the img height to match your logo type! */
 	}
 }
 
